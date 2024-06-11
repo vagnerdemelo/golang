@@ -8,6 +8,8 @@ import (
 func main() {
 	CriarVariaveis()
 	fmt.Print("Imprimindo o return da funcao Soma \n", Soma(10, 10), "\n")
+	fmt.Print("Imprimindo o return da funcao Hello \n", Hello(), "\n")
+
 }
 
 func Soma(a, b int) int {
@@ -39,4 +41,8 @@ func CriarVariaveis() {
 	fmt.Printf("array de inteiros: %s\n", reflect.TypeOf(array))
 	fmt.Printf("array de strings: %s\n", reflect.TypeOf(array_strings))
 
+}
+
+func Hello() string {
+	return ("Hello World")
 }
